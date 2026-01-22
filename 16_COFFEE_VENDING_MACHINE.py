@@ -1,8 +1,8 @@
-import sys
+# import sys
 from prettytable import PrettyTable
 
-raw_data_path = r"E:\Program Files\RobinData\WORK\RawData"
-sys.path.append(raw_data_path)
+# raw_data_path = r"E:\Program Files\RobinData\WORK\RawData"
+# sys.path.append(raw_data_path)
 
 from menu import Menu
 from coffee_maker import CoffeeMaker
@@ -56,3 +56,4 @@ while on_off:
         if drink is not None:
             if coffee_maker.is_resource_sufficient(drink) and money_machine.make_payment(drink.cost):
                 coffee_maker.make_coffee(drink)
+
